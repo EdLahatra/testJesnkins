@@ -1,0 +1,32 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'HermesFront' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for ReactPushNotifications - Add these lines
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+
+  # Pods for HermesFront
+
+  target 'HermesFrontTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'HermesFront-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for HermesFront-tvOS
+
+  target 'HermesFront-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
